@@ -116,8 +116,8 @@ html {
 
 /* buttons */
 
-.services_wrapper {
-  background-color: #f1f1f1;
+.wrapper {
+  background-color: #f0f0f0;
   width: 900px;
   margin: 0 auto;
   padding: 60px 0;
@@ -126,12 +126,21 @@ html {
 .section-heading {
   text-align: center;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 700;
   padding-bottom: 80px;
   color: #444;
 }
 
-.services-list {
+.testimonials .section-heading {
+  padding-bottom: 60px;
+}
+
+.section-heading--caps {
+  text-transform: uppercase;
+}
+
+.services-list,
+.testimonials-list {
   margin: 0;
   padding: 30px 0;
   list-style-type: none;
@@ -140,12 +149,14 @@ html {
   justify-content: space-around;
 }
 
-.services-card {
+.services-card,
+.testimonials-card {
   flex: 1;
   position: relative;
 }
 
-.services-card .services-card__icon {
+.services-card .services-card__icon,
+.testimonials-card .testimonials-card__avatar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,11 +164,20 @@ html {
   margin-bottom: 30px;
 }
 
-.services-card .services-card__icon img {
+.testimonials-card .testimonials-card__avatar {
+  height: 70px;
+}
+
+.services-card .services-card__icon img,
+.testimonials-card .testimonials-card__avatar img {
   height: 100%;
 }
 
-.services-card .services-card__head {
+.testimonials-card .testimonials-card__avatar img {
+  border-radius: 50%;
+}
+
+.services-card .services-card__head, .testimonials-card .testimonials-card__head {
   font-weight: 600;
   font-size: 20px;
   padding: 0;
@@ -166,7 +186,13 @@ html {
   text-align: center;
 }
 
-.services-card .services-card__content {
+.testimonials-card .testimonials-card__head span {
+  color: rgb(128, 128, 128);
+  font-size: 11px;
+  font-weight: 400;
+}
+
+.services-card .services-card__content, .testimonials-card .testimonials-card__content {
   padding: 25px 25px 0;
   text-align: center;
   font-size: 14px;
@@ -244,7 +270,7 @@ html {
 
 .recent_work figure img {
   width: 100%;
-  transform: scale(1.15);
+  transform: scale(1.05);
   transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
 }
 
