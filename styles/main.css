@@ -277,7 +277,7 @@ body {
 .recent_work figure img {
   width: 100%;
   transform: scale(1.05);
-  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
+  transition: transform cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.4s;
 }
 
 .recent_work figure:hover img {
@@ -328,4 +328,29 @@ footer .rights {
 .footer_widget__item__content a {
   display: inline-block;
   font-weight: 600;
+}
+
+.footer_widget__list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.footer_widget__list li {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.footer_widget__list li:not(:last-child) {
+  margin-bottom: 3px;
+}
+
+.footer_widget__list li a {
+  text-decoration: none;
+  color: #eeeeee;
+  transition: color .2s;
+}
+
+.footer_widget__list li a:hover,
+.footer_widget__list li :active {
+  color: rgb(175, 175, 175);
 }
